@@ -1,0 +1,170 @@
+
+i {
+  color: white;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#main-holder {
+  height: 'fit-content';
+  background-image: url("../images/nbg11.jpeg");
+  background-repeat: 'repeat-y';
+  background-size: 'auto';
+  margin-top: -30px;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+#features {
+  padding: 20px;
+  text-align: center;
+  margin: 10%;
+}
+body {
+  position: relative;
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+a {
+  color: white;
+  font-weight: normal;
+}
+a:hover {
+  color: white;
+  font-weight:bold ;
+  border: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1em 2em; */
+  background-color: #00445d;
+  z-index: 10;
+  padding-right: 25px;
+}
+
+header img {
+  height: 75px;
+  margin-bottom: 15px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.bg-orange {
+  background-color: #f67d1f;
+}
+.bg-white {
+  background-color: white;
+}
+.padding {
+  padding: 4em 2em;
+}
+
+.bg-gray {
+  background-color: #00445d;
+}
+.slider {
+  width: 100%;
+}
+
+.footer {
+  padding: 2em;
+  background-color: #f67d1f;
+  height: 500px;
+  color: white;
+}
+
+.image-container {
+  background-image: url(../images/slider1.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%; /* or any desired width */
+  height: 400px; /* or any desired height */
+}
+
+.slider2 {
+  background-image: url(../images/slider1.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%; /* or any desired width */
+  height: 150px; /* or any desired height */
+}
+.slider2 h3 {
+  font-size: 36px;
+}
+.slider2 i {
+  font-size: 40px
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* ensures text is truly centered */
+  color: white; /* or any desired color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.75
+  ); /* optional: black background with 50% opacity for better text visibility */
+  padding: 50px;
+  border-radius: 5px; /* optional: for rounded corners */
+  
+}
+.large-text {
+  font-size: 100px;
+}
+.small-text {
+  font-size: 28;
+}
+.card-body h4 {
+  font-size: 20px;
+}
+.card-body p {
+  font-size: 14px;
+}
+.dark-line {
+  width: 100%;
+  height: 5px;
+  margin: 2px;
+  background-color: #00445d;
+}
+.light-line {
+  width: 100%;
+  height: 5px;
+  margin: 2px;
+  background-color: #f67d1f;
+}
+.card {
+  background-color: #00445d;
+}
+.image-overlay {
+  position: relative;
+  left: 0;
+  top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  text-align: center;
+  height: 100%;
+}
+.image-overlay:before {
+  background-color: white;
+  opacity: 0.5;
+}
+.image-overlay h1 {
+  color: #f67d1f;
+}
