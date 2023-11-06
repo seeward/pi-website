@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Power Integrator</title>
+
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/inter');
+      </style>
+
     <link
       href="https://fonts.cdnfonts.com/css/trebuchet-ms-2"
       rel="stylesheet"
@@ -22,62 +26,110 @@
   </head>
 
   <body onload="init()">
-    <!-- APP HEADER BAR -->
+    <!-- MOBILE -->
+    <div class="d-block d-sm-none">
+      <header>
+
+          <img
+            src="images/PowerIntegrator_logo4.png"
+            style="margin-top: 3px; padding: 3px;margin-bottom: 10px;"
+            height="70"
+          />
+
+
+      </header>
+
+      <div class="slider3">
+        <div class="image-container3">
+          <div class="overlay-text3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <h4 class="small-text2">
+                    Data is at the core of every
+                  </h4>
+                  <h3 class="modern-tag2">modern business</h3>
+                  <p class="desc-text2">
+                    Fast Track Your Data Transformation and Integration
+                  </p>
+                  <a
+                  href="#features"
+                    class="btn btn-lg"
+                    style="background-color: #f67d1f;
+                      color: white;
+                      border-radius: 10px;">
+                    How It Works
+                  </a>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer" id="footer">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="address">
+                <br />
+                <p>(c) 2023 - Power Integrator - All Rights Reserved</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <!-- a four col grid with placeholders for social media links -->
+              <div class="social">
+                <!-- <p style="color:#f67d1f"><strong>FOLLOW US</strong></p>
+                <a href="https://facebook.com/powerintegrator" target="_blank"
+                  ><img src="images/1.png" width="50" style="margin:0px;margin-left: -10px;margin-top: -10px" /></a> -->
+                <!-- <a href="#" target="_blank"
+                  ><img src="images/4.png" width="50" style="margin:0px;margin-top: -10px"/></a>
+                <a href="#" target="_blank"
+                  ><img src="images/3.png" width="50" style="margin:0px;margin-top: -10px"></a> -->
+                <!-- <a href="#" target="_blank"
+                  ><img src="images/2.png" width="50" style="margin:0px;margin-top: -10px"/></a> -->
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <p style="color:#f67d1f"><strong>CONTACT US</strong></p>
+              <p>info@powerintegrator.net</p>
+            </div>
+  
+          </div>
+        </div>
+  
+      </div>
+
+    </div>
+
+    <!-- DESKTOP -->
+    <div class="d-none d-sm-block">
+          <!-- APP HEADER BAR -->
     <header>
       <a href="#home">
-        <img src="images/logo_hi.png" style="margin-top:3px ;padding: 3px;margin-left: 50px"/>
+        <img
+          src="images/PowerIntegrator_logo4.png"
+          style="margin-top: 3px; padding: 3px;margin-bottom: 10px;"
+          height="70"
+        />
       </a>
-      
-    <!-- STANDARD NAV BAR -->
-    <nav class="d-none d-sm-block">
-      <a href="#home" id="navhome">Home</a>
-      <a href="#features" id="navfeatures">How it Works</a>
-      <a href="#demo" id="navdemo">Demo</a>
-      <a href="#partners" id="navpartners">Partners</a>
-      <a href="#contact" id="navcontact">Contact Us</a>
-    </nav>
-    
-    <!-- MOBILE MENU -->
-    <div class="d-block d-sm-none">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fas fa-bars" style="color: white"></i>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <!-- ml-auto is used to align the links to the right -->
-            <li class="nav-item active">
-              <a class="nav-link" href="#home" id="mobile_home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features" id="mobile_features"
-                >Features</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#demo" id="mobile_demo">Demo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#partners" id="mobile_partners"
-                >Partners</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" id="mobile_contact"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-    </div>
+      <!-- STANDARD NAV BAR -->
+      <nav class="d-none d-sm-block">
+        <a href="#home" id="navhome">Home</a>
+        <a href="#features" id="navfeatures">How it Works</a>
+        <a href="#contact" id="navcontact">
+          <a class="btn" href="#contact" style="background-color: #f67d1f;color: white">
+            Request a Demo</a
+          ></a>
+      </nav>
+
+
+
 
     </header>
 
@@ -86,424 +138,721 @@
     <!-- MAIN CONTENT DIV -->
     <div id="main-holder"></div>
 
-    <!-- MAIN CONTENT BLOCKS -->
+    <!-- MAIN PAGE CONTENT -->
     <div id="home" style="display: none">
+
+      <!-- MAIN SLIDER HEADER -->
       <div class="slider">
         <div class="image-container">
           <div class="overlay-text">
-           <img
-              class="d-none d-sm-block"
-              src="images/logo.svg"
-              width="175"
-              style="margin:auto;border-radius: 7px;background-color: white;padding:20px;margin-bottom: 10px;"
-            />
-            <br />
-            <h3 class="small-text d-none d-sm-block">Data is at the core of every modern business.</h3>
-            <p class="desc-text">The Power Integrator platform – PI – is your fast-track solution for data transformation and integration, that can add the power of data to your business.</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <h4 class="small-text d-none d-sm-block">
+                    Data is at the core of every
+                  </h4>
+                  <h3 class="modern-tag">modern business</h3>
+                  <p class="desc-text">
+                    Fast Track Your Data Transformation and Integration
+                  </p>
+                  <a
+                  href="#features"
+                    class="btn btn-lg"
+                    style="background-color: #f67d1f;
+                      color: white;
+                      border-radius: 10px;">
+                    How It Works
+                  </a>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    
-      
-        <div class="container mt-5">
-          <div class="row">
-            <!-- Feature 1 -->
-            <div class="col-md-4 mb-4">
-              <div class="card text-white">
-                <div class="card-body text-center">
-                  <i class="fas fa-robot fa-3x mb-3"></i>
-                  <h4>Automate Complex Tasks</h4>
-                  <p>PI makes automating complex business tasks a painless process.</p>
-                  <a href="#features" class="btn btn-sm btn-light bg-orange">More</a>
-                </div>
+
+      <div style="text-align: center; width: 100%;background-color: #00445d;padding-left:25%;padding-right: 25%;padding-bottom: 25px;padding-top: 30px;">
+        <br />
+        <h1 class="accent-diff">Think About Data Differently</h1>
+        <p class="text-center mb-5" style="color: white;font-weight: normal;">
+          What if there was one data integration platform that could handle
+          multiple data inputs and outputs for you and manage all your data
+          transformations, saving you time and effort, improving your
+          operational efficiency and bringing you closer to your business
+          goals?
+        </p>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="container main-how" style="text-align: center; width: 100%">
+
+
+        <div class="row" style="width: 100%;margin-top: 20px;margin-bottom: 50px;">
+          <div class="col-md-2"></div>
+          <div class="col-md-5" style="text-align: center">
+            <div style="text-align: right">
+              <h4 class="gradient-text">Automate Complex Tasks</h4>
+              <p>
+                Power Integrator makes automating complex business tasks a painless process.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" style="text-align: right">
+            <div class="overlapper">
+              <img
+                src="images/accent-automate.png"
+                class="accentbase"
+                style="border-radius: 40px"
+              />
+              <div class="accenttop">
+                <img src="images/6.png" width="150" class="pi-robot-style"/>
+
               </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Feature 2 -->
-            <div class="col-md-4 mb-4">
-              <div class="card text-white">
-                <div class="card-body text-center">
-                  <i class="fas fa-lock fa-3x mb-3"></i>
-                  <h4>Warehouse Data Securely</h4>
-                  <p>Get handle on your data with advanced and centralized data storage.</p>
-                  <a href="#features" class="btn btn-sm btn-light bg-orange">More</a>
+        <br />
+        <br />
+
+        <div class="row" style="width: 100%;margin-top: 20px;margin-bottom: 50px">
+          <div class="col-md-1"></div>
+
+          <div class="col-md-4" style="text-align: center; width: 100%">
+            <div class="overlapper">
+              <img
+                src="images/accent-data.png"
+                class="accentbase"
+                style="border-radius: 40px"
+              />
+              <div class="accenttop2">
+                <img src="images/5.png" width="150" class="pi-robot-style"/>
+
+                <!-- <i
+                  class="fa fa-2x fa-database pi-robot-style"
+                  style="color: white; padding-left: 35px; padding-right: 35px"
+                ></i> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" style="text-align: center; width: 100%">
+            <div style="text-align: left; width: 100%">
+              <h4 class="gradient-text">Store Data Securely</h4>
+              <p>
+                Get a handle on your data with advanced and centralized data
+                stores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <div class="row" style="width: 100%;margin-top: 20px;margin-bottom: 50px">
+          <div class="col-md-2"></div>
+          <div class="col-md-5" style="text-align: center">
+            <div style="text-align: right">
+              <h4 class="gradient-text">Connect to Many Systems</h4>
+              <p>
+                Flat files, ERP, CRM, Web Services, SFTP servers and more...
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" style="text-align: right">
+            <div class="overlapper">
+              <img
+                src="images/accent-connections.png"
+                class="accentbase"
+                style="border-radius: 40px; border: 1px solid black"
+              />
+              <div class="accenttop">
+                <img src="images/8.png" width="150" class="pi-robot-style"/>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="row" style="width: 100%;margin-top: 20px;margin-bottom: 50px">
+          <div class="col-md-1"></div>
+
+          <div class="col-md-4" style="text-align: center; width: 100%">
+            <div class="overlapper">
+              <img
+                src="images/accent-manage.png"
+                class="accentbase"
+                style="border-radius: 40px; border: 1px solid black"
+              />
+              <div class="accenttop2">
+                <img src="images/7.png" width="150" class="pi-robot-style"/>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" style="text-align: center; width: 100%">
+            <div style="text-align: left; width: 100%">
+              <h4  class="gradient-text">Manage Integrations</h4>
+              <p>
+                Manage all your integrations in one place with our easy to use
+                interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="fullpage">
+
+            <div class="image-container_right">
+              <div class="overlay-text_2">
+                <h2>Easily Monitor and Manage<br /><span style="margin-top: -10px;font-weight: bold;color: #f67d1f;">Complex Data Integrations</span></h2>
+                <br />
+                <p style="font-size: 20px;">
+                  All-in-one-place dashboards to monitor even the most difficult
+                  environments.
+               <br />
+                  Manage everything on one place to save time and money!</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="featureblock d-none d-sm-block">
+        <div class="featureinner">
+          <h1 style="color:white">A Powerful Tool-set for Your Data</h1>
+          <hr />
+          <div class="container">
+            <div class="row">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <i
+                        class="fas fa-4x fa-database"
+                        style="
+                          margin-bottom: 20px;
+                          color: white;
+                        "
+                      ></i>
+                      <h4 class="toolset-text">Data Warehouse</h4>
+                      <p
+                        class="card-text"
+                        style="color: white; font-size: 20px"
+                      >
+                        Securely store, update, query, and
+                        design reports on data.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-4">
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <i
+                        class="fas fa-4x fa-file-alt"
+                        style="
+                          margin-bottom: 20px;
+                          color: white;
+                        "
+                      ></i>
+                      <h4 class="toolset-text">File Service</h4>
+
+                      <p
+                        class="card-text"
+                        style="color: white; font-size: 20px"
+                      >
+                        Work with files, store documents, and
+                        access data within them.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <i
+                        class="fas fa-4x fa-cogs"
+                        style="
+                          margin-bottom: 20px;
+                          color:white;
+                        "
+                      ></i>
+                      <h4 class="toolset-text">Runner Service</h4>
+                      <p
+                        class="card-text"
+                        style="color: white; font-size: 20px"
+                      >
+                        Execute workflows on triggers or
+                        schedules in isolated threads.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-md-4">
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <i
+                        class="fas fa-4x fa-users-cog"
+                        style="
+                          margin-bottom: 20px;
+                        
+                          color: white;
+                       
+                        "
+                      ></i>
+                      <h4 class="toolset-text">Partner Service</h4>
+
+                      <p
+                        class="card-text"
+                        style="color: white; font-size: 20px"
+                      >
+                         User and role management with multiple
+                        access levels.
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="col-md-4">
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <i
+                        class="fas fa-4x fa-clipboard-list"
+                        style="
+                          margin-bottom: 20px;
+                          color: white;
+                          
+                        "
+                      ></i>
+                      <h4 class="toolset-text">Logging Service</h4>
+
+                      <p
+                        class="card-text"
+                        style="color: white; font-size: 20px"
+                      >
+                        Persist logs and sync with 3rd party
+                        systems.
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="col-md-4">
+                  <div class="card mb-4">
+                    <div class="card-body text-center">
+                      <i
+                        class="fas fa-4x fa-project-diagram"
+                        style="
+                          margin-bottom: 20px;
+                          color:white;
+                        "
+                      ></i>
+                      <h4 class="toolset-text">Workflow Manager</h4>
+
+                      <p
+                        class="card-text"
+                        style="color: white; font-size: 20px"
+                      >
+                        Manage execution and monitoring of
+                        workflows.
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="findoutmore d-none d-sm-block">
+        <div class="container">
+          <div class="row" style="padding: 20px">
+            <div class="container">
+              
+                <div class="row" style="
+                width: 100%;
+                text-align: left;
+                padding: 60px;
+                padding-left: 25px;
+                padding-right: 25px;
+                color: white;
+                border-radius: 25px;
+                background-color: #00445d;
+              ">
+                <div class="col-md-6">
+                  <div class="col-md-12">
+                  <h2 style="color: white">Want to <br /><span style="margin-top: -10px;color:#f67d1f;font-weight: bold;">Future-Proof your data?</span></h2>
+                  <p>Contact us and find out how you can fast-track your data transformation and integrations.</p>
+                  <form data-static-form-name="email">
+                  <div class="row">
+                    
+                    <div class="col-md-6">
+
+                      <input class="form-control" name="email" type="email" placeholder="Your Email Address" style="margin-bottom: 10px" />
+                    </div>
+                    <div class="col-md-6">
+                      
+                      <button
+                    type="submit"
+                    class="btn btn-light btn-lg"
+                    style="background-color: #00445d; color: white;font-size: 16px;"
+                  >
+                    Schedule Your Meeting
+                  </button>
+
+                    </div>
+                  </form>
+                  </div>
+                  
+                </div></div>
+                <div class="col-md-6" style="text-align: center;">
+                  <Image src="/images/corporate.png"  class="shade" style="border-radius: 50%;width: 250px;padding:5px;background-color: #f67d1f;"/>
+
+        
+              </div>
               </div>
             </div>
             
+          </div>
+        </div>
 
-            <!-- Feature 3 -->
-            <div class="col-md-4 mb-4">
-              <div class="card text-white">
-                <div class="card-body text-center">
-                  <i class="fas fa-check-circle fa-3x mb-3"></i>
-                  <h4>Ensure Data Quality</h4>
-                  <p>
-                    Best in class tools that can be easily configured to ensure your data quality.
-                  </p>
-                  <a href="#features" class="btn btn-sm btn-light bg-orange">More</a>
-                </div>
+        <!-- Modal for Demo Request -->
+        <div
+          class="modal fade"
+          id="demoRequestModal2"
+          style="color: black"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="demoRequestModalLabel2"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title btn-block" id="demoRequestModalLabel2">
+                  Request a Demo
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="padding: 25px">
+                <form method="POST" >
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" name="company" class="form-control" id="company" />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  class="btn"
+                  style="background-color: #f67d1f; color: white"
+                >
+                  Continue
+                </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- Feature 4 -->
-            <div class="col-md-4 mb-4">
-              <div class="card text-white">
-                <div class="card-body text-center">
-                  <i class="fas fa-plug fa-3x mb-3"></i>
-                  <h4>Connect to Many Systems</h4>
-                  <p>Flat files, ERP, CRM, Web Services, SFTP servers and more...</p>
-                  <a href="#features" class="btn btn-sm btn-light bg-orange">More</a>
+
+    <!-- OTHER PAGE CONTENT BLOCKS -->
+    <div id="features" style="display: none">
+    
+      <!-- <div class="slider2">
+        <div class="overlay-text">
+          <h3 class="small-text d-none d-sm-block">How it Works</h3>
+        </div>
+      </div> -->
+      <div class="section" style="text-align: center; width: 100%">
+        <div
+          style="
+            background-color: #00445d;
+            width: 100%;
+            padding: 0px;
+            padding-left: 15%;
+            padding-right: 15%;
+            margin: 0px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: white;
+          "
+        >
+        
+              <div style="text-align: center;padding-top: 50px;margin-bottom: 50px;">
+                <h4>Take Control of Your Data</h4>
+                <br />
+                <div style="width: 100%;text-align: justify;padding-top:25px;padding-bottom: 25px;">
+
+  
+                <p>
+                  Data is at the core of every modern business. Your data comes
+                  from multiple sources and in multiple formats, but without a
+                  unified and integrated view, you may struggle to achieve
+                  operational effectiveness or gain long-term insights. How can
+                  you make use of data that arrives in the wrong format without
+                  costly and difficult ETL functions? How can you simplify data
+                  delivery to partners and customers when each one demands a
+                  different data format?
+                </p>
+                <p>
+                  What if there was one data integration platform that could
+                  handle multiple data inputs and outputs for you and manage all
+                  your data transformations, saving you time and effort,
+                  improving your operational efficiency, and bringing you closer
+                  to your business goals?
+                </p>
+                <p>
+                  The Power Integrator platform – PI – is your fast-track
+                  solution for data transformation and integration, that can add
+                  the power of data to your business. PI’s flexible connector
+                  technology can link securely to a whole range of data sources
+                  including file systems, databases, applications, APIs, flat
+                  files, and more. The PI workflow engine can carry out a whole
+                  range of data transformation tasks and can then output the
+                  data to the required destination using another secure flexible
+                  connector.
+                </p>
                 </div>
                 
               </div>
-            </div>
-
-            <!-- Feature 5 -->
-
-            <div class="col-md-4 mb-4">
-              <div class="card text-white">
-                <div class="card-body text-center">
-                  <i class="fas fa-eye fa-3x mb-3"></i>
-                  <h4>Monitor Data Integrations</h4>
-                  <p>
-                    All-in-one-place dashboards for even the most complicated environments.
-                  </p>
-                  <a href="#features" class="btn btn-sm btn-light bg-orange">More</a>
-                </div>
-              </div>
-            </div>
+             
+             
+              <img src="images/new-services.jpeg" style="width: 100%;margin:25px;margin-bottom: 40px;" />
           
-
-            <!-- Feature 6 -->
-            <div class="col-md-4 mb-4">
-              <div class="card text-white">
-                <div class="card-body text-center">
-                  <i class="fas fa-cogs fa-3x mb-3"></i>
-                  <h4>Manage Integrations</h4>
-                  <p>
-                    Manage all your integrations in one place with our easy to use interface.
-                  </p>
-                  <a href="#features" class="btn btn-sm btn-light bg-orange">More</a>
-                </div>
-              </div>
+              <h4>
+                Automate Complex Integrations
+              </h4>
+              <p style="text-align: justify;margin-top: 25px;margin-bottom: 50px;">
+                Creating a PI workflow couldn’t be simpler. Using a drag and
+                drop low-code editor with a powerful set of predefined worker
+                nodes you can create a workflow to, for example, extract data
+                from a source system, validate it against a reusable set of
+                rules, transform its structure or values and then send it to a
+                destination system in a completely different file format. With
+                PI you can work magic to clean up even the messiest data
+                integration nightmares. Whether you choose to use PI on-premises
+                or in the cloud, the security and integrity of your data remains
+                a top priority.
+              </p>
+              <br />
+              <br />
             </div>
           </div>
-        </div>
-  
-    </div>
-    <div id="features" style="display: none">
-     
-        <div class="slider2">
-          <div class="overlay-text">
-            <h3 class="small-text d-none d-sm-block"><i class="fa fa-cogs"></i> How it Works</h3>
-          </div>
-        </div>
-
-      <div class="section padding" style="text-align: center;width: 100%;border-radius: 5px;">
-
-        <div style="background-color: #00445d;width: 100%;padding: 25px;text-align: center;color: white">
-          <div class="container">
-         <div class="row">
-          <div style="text-align: justify;">
-            <p>Data is at the core of every modern business. Your data comes from multiple sources and in multiple formats, but without a unified and integrated view, you may struggle to achieve operational effectiveness or gain long-term insights. How can you make use of data that arrives in the wrong format without costly and difficult ETL functions? How can you simplify data delivery to partners and customers when each one demands a different data format?</p>
-            <p>What if there was one data integration platform that could handle multiple data inputs and outputs for you and manage all your data transformations, saving you time and effort, improving your operational efficiency, and bringing you closer to your business goals?</p>
-             <p>The Power Integrator platform – PI – is your fast-track solution for data transformation and integration, that can add the power of data to your business. PI’s flexible connector technology can link securely to a whole range of data sources including file systems, databases, applications, APIs, flat files, and more. The PI workflow engine can carry out a whole range of data transformation tasks and can then output the data to the required destination using another secure flexible connector.</p>
-          </div>
-          <h1><i class="fa fa-info-circle" style="color:#f67d1f"></i> Platform Services</h1>
-            <img src="images/services.jpeg" style="width: 100%" />
-          <br/>
-          <h1><i class="fa fa-wrench" style="color:#f67d1f"></i> A Powerful Tool-set for Your Data</h1>
-
-          <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-database" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">Data Warehouse – Securely store, update, query, and design reports on data.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-file-alt" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">File Service – Work with files, store documents, and access data within them.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-cogs" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">Runner Service – Execute workflows on triggers or schedules in isolated threads.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-users-cog" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">Partner Service – User and role management with multiple access levels.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-clipboard-list" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">Logging Service – Persist logs and sync with 3rd party systems.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-project-diagram" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">Workflow Manager – Manage execution and monitoring of workflows.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body text-center">
-                        <i class="fas fa-folder-open" style="font-size: 40px;color:#f67d1f"></i>
-                        <p class="card-text" style="color: white;font-size: 20px;">SFTP Server – Secure file storage for workflow inputs/outputs.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4">
-                  <div class="card-body text-center">
-                      <i class="fas fa-chart-line" style="font-size: 40px;color:#f67d1f"></i>
-                      <p class="card-text" style="color: white;font-size: 20px;">Integrations Co-Pilot - Monitor entire integration landscape.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-                <div class="card-body text-center">
-                    <i class="fas fa-cloud" style="font-size: 40px;color:#f67d1f"></i>
-                    <p class="card-text" style="color: white;font-size: 20px;">On-Premise or Cloud - Flexible hosting to meet your needs.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        <br />
-        <h1><i class="fa fa-robot" style="color:#f67d1f"></i> Automate Complex Integrations from One Place</h1>
-        <p style="text-align: justify;">Creating a PI workflow couldn’t be simpler. Using a drag and drop low-code editor with a powerful set of predefined worker nodes you can create a workflow to, for example, extract data from a source system, validate it against a reusable set of rules, transform its structure or values and then send it to a destination system in a completely different file format. With PI you can work magic to clean up even the messiest data integration nightmares.
-          Whether you choose to use PI on-premises on in the cloud, the security and integrity of your data remains a top priority.
-          </p>
-          <br />
-            <img src="images/platform.jpeg" style="width: 100%" /> 
-         </div>       
-          </div>
-      </div>
-    </div>
-    </div>  
-    <div id="demo" style="display: none">
-      <div class="slider2">
-        <div class="overlay-text">
-          <h3 class="small-text d-none d-sm-block"><i class="fa fa-fire-alt"></i> Experience the Power of PI</h3>
-        </div>
-      </div>
-      <div class="section padding" style="text-align: center;width: 100%;border-radius: 5px;">
-          <div style="background-color: white;width: 100%;padding: 25px;text-align: center;">
-            <img src="images/logo.svg" width="25%" style="margin-left: 0;margin-right: 0;"/>
-            <h4>Experience the next generation of integration tools.</h4>
-            <br />
-            <button type="button" class="btn btn-light btn-lg" style="background-color: #00445d;color: white" data-toggle="modal" data-target="#demoRequestModal">Request a Demo</button>
-          </div>
-          
-      <!-- Modal for Demo Request -->
-      <div class="modal fade" id="demoRequestModal" tabindex="-1" role="dialog" aria-labelledby="demoRequestModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title btn-block" id="demoRequestModalLabel">Request a Demo</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" style="padding: 25px">
-              <form>
-                <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="company">Company Name</label>
-                  <input type="text" class="form-control" id="company">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn" style="background-color: #f67d1f;color: white">Continue</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-      
-      </div>
-    </div>
-    <div id="partners" style="display: none">
-      <div class="slider2">
-        <div class="overlay-text">
-          <h3 class="small-text d-none d-sm-block"><i class="fa fa-handshake"></i> Together We Are Stronger</h3>
-        </div>
-      </div>
-      <div class="section padding">
-    <div>
-
-  <div style="margin-top: -25px;background-color: white;padding: 50px;border-radius: 5px;">
-    <h1>Partners</h1>  
-    <hr />
-
     
-    <div class="p-2">
-      <a href="https://www.liminil.net/" target="_blank"><img src="images/liminil_logo_gray.png" width="275" alt="Ivanhoe"></a>
-      </div>
-    <div class="p-2">
-      <a href="https://www.ivanhoemines.com/" target="_blank"><img src="images/ivanhoe.png" width="300" alt="Ivanhoe"></a>
-      </div>
-      <div class="p-2">
-        <a href="https://www.linkederp.com/" target="_blank"><img src="images/linked.jpeg" width="250" alt="Linked"></a>
-
-      </div>
-      <div class="p-2">
-        <a href="https://www.tesseraetech.com/" target="_blank"><img src="images/tesserae.png" alt="Tesserae"></a>
-
-
-      </div>
-     
-    </div>
-    </div>
-    </div>
-    </div>
-    <div id="contact" style="display: none">
-      <div class="slider2">
-        <div class="overlay-text">
-          <h3 class="small-text d-none d-sm-block"><i class="fa fa-mail-bulk"></i> Connect</h3>
+      <div class="findoutmore">
+        <div class="container">
+          <div class="row" style="padding: 20px">
+            <div
+              class="col-md-12"
+              style="
+                text-align: center;
+                padding: 50px;
+                color: white;
+                border-radius: 25px;
+                background-color: #00445d;
+              "
+            >
+              <h2>Want to know more about Power Integrator?</h2>
+              <p>Experience the Next Generation of Integration Tools</p>
+              <a
+              href="#contact"
+                type="button"
+                class="btn btn-light btn-lg"
+                style="background-color: #f67d1f; color: white"
+              >
+                Request a Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="section">
+    </div>
+
+    <div id="contact" style="display: none">
+
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <div style="height: 100%; width: 50%; padding-top: 40%">
-                <h1>Contact Us</h1>
-                <p>
-                  Get in touch with us by filling out the form on the right or
-                  emailing one of the emails below.
-                </p>
+            <div class="col-md-5">
+              <div style="height: 100%; padding-top: 100px">
+                <img
+                src="images/logo.svg"
+                width="100%"
+              />
+              <hr />
+                <h5>
+                  Get in touch with us.
+                </h5>
               </div>
             </div>
-            <div class="col-md-6" style="margin: 0; padding: 0;height: 100%; width: 100%;">
+            <div class="col-md-1"></div>
+            <div
+              class="col-md-6"
+              style="margin: 0; padding: 0; height: 100%; width: 100%"
+            >
               <div
-              
-                style="padding:100px;padding-bottom: 300px;text-align: left;height: 100%; width: 100%;"
+                style="
+                  padding: 100px;
+                  padding-bottom: 300px;
+                  text-align: left;
+                  height: 100%;
+                  width: 100%;
+                "
               >
-            
-                    <div class="form-group">
-                      <label for="name">Name:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Enter your name"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter your email"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="companyName">Company Name:</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="companyName"
-                        placeholder="Enter company name"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message:</label>
-                      <textarea
-                        class="form-control"
-                        id="message"
-                        rows="3"
-                        placeholder="Type your message here..."
-                        required
-                      ></textarea>
-                    </div>
-                    <button id="submit" style="background-color: #04445D;" class="btn btn-primary btn-block">
-                      Submit
-                    </button>
-           
-       
+              <form data-static-form-name="contact">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Company Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="companyName"
+                    name="company"
+                    placeholder="Enter company name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    placeholder="Type your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  id="submit"
+                  style="background-color: #f67d1f; color: white"
+                  class="btn btn-primary btn-block"
+                >
+                  Submit
+                </button>
+              </form>
+
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </div>
+
+
 
     <!-- FOOTER -->
     <div class="footer" id="footer">
+
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-4">
+            <img src="images/PowerIntegrator_logo4.png" style="width: 100%" />
             <div class="address">
+              <br />
               <p>(c) 2023 - Power Integrator - All Rights Reserved</p>
-              <p></p>
             </div>
           </div>
           <div class="col-md-3">
             <!-- a four col grid with placeholders for social media links -->
             <div class="social">
-              <h2>Follow Us</h2>
-              <br />
-              <a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+              <!-- <p style="color:#f67d1f"><strong>FOLLOW US</strong></p>
+              <a href="https://facebook.com/powerintegrator" target="_blank"
+                ><img src="images/1.png" width="50" style="margin:0px;margin-left: -10px;margin-top: -10px" /></a> -->
+              <!-- <a href="#" target="_blank"
+                ><img src="images/4.png" width="50" style="margin:0px;margin-top: -10px"/></a>
+              <a href="#" target="_blank"
+                ><img src="images/3.png" width="50" style="margin:0px;margin-top: -10px"></a> -->
+              <!-- <a href="#" target="_blank"
+                ><img src="images/2.png" width="50" style="margin:0px;margin-top: -10px"/></a> -->
+            </div>
           </div>
-        </div>
-
-          <div class="col-md-3">
+          <div class="col-md-2">
             <div class="sitemap">
-              <h2>Sitemap</h2>
-              <ul style="list-style: none;">
+              <p style="color:#f67d1f"><strong>SITEMAP</strong></p>
+              <ul style="list-style: none;margin-left:-35px">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">How it Works</a></li>
-                <li><a href="#demo">Schedule a Demo</a></li>
-                <li><a href="#partners">Partners</a></li>
                 <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
-          
+          <div class="col-md-3">
+            <p style="color:#f67d1f"><strong>CONTACT US</strong></p>
+            <p>info@powerintegrator.net</p>
+          </div>
+
+        </div>
       </div>
-     
-      
-      </div>
+
+    </div>
     </div>
 
+    
   </body>
 
   <!-- JS LIBRARIES -->
@@ -513,18 +862,17 @@
 
   <!-- CUSTOM JS -->
   <script>
-
     // fire on DOM loaded event
     function init() {
-
       // handle browser back and forward buttons
-      window.onpopstate = function(event) {
-        let c = resolveContent(document.location.href.split('#')[1]);
+      window.onpopstate = function (event) {
+        let c = resolveContent(document.location.href.split("#")[1]);
         mainHolder.innerHTML = c;
-      }
+      };
 
       // hooks to DOM elements
       const mainHolder = document.getElementById("main-holder");
+      const _body = document.getElementsByTagName("body")[0];
       const footer = document.getElementById("footer");
       const home = document.getElementById("home");
       const features = document.getElementById("features");
@@ -540,65 +888,50 @@
         // based on href, return the content block
         switch (id) {
           case "home":
-            mainHolder.style.backgroundImage = "url('images/nbg11.jpeg')";
-            mainHolder.style.backgroundSize = 'auto'
-            mainHolder.style.backgroundRepeat = 'repeat'
-            footer.style.backgroundColor = "#f77c1f"; 
-            mainHolder.style.height = 'fit-content'
+
+          mainHolder.style.height = "fit-content";
             return home.innerHTML;
           case "features":
-            mainHolder.style.backgroundImage = "url('images/nbg3.jpeg')";
+
             mainHolder.style.height = "fit-content";
-            mainHolder.style.backgroundSize = 'auto'
-            mainHolder.style.backgroundRepeat = 'repeat-y'
-            footer.style.backgroundColor = "#f77c1f"; 
             return features.innerHTML;
           case "demo":
-            footer.style.backgroundColor = "#00445d"; 
-            mainHolder.style.backgroundImage = "url('images/nbg2.jpeg')";
-            mainHolder.style.backgroundSize = 'cover'
-            mainHolder.style.backgroundRepeat = 'no-repeat'
-            mainHolder.style.height = 100 + 'vh'
+
+            mainHolder.style.height = "fit-content";
             return demo.innerHTML;
           case "partners":
-            mainHolder.style.backgroundImage = "url('images/nbg1.jpeg')";
-            mainHolder.style.backgroundSize = 'cover'
-            mainHolder.style.backgroundRepeat = 'no-repeat'
-            mainHolder.style.height = 100 + 'vh'
-            footer.style.backgroundColor = "#f77c1f"; 
+
+            mainHolder.style.height = "fit-content";
             return partners.innerHTML;
           case "contact":
-            mainHolder.style.backgroundImage = "url('images/nbg3.jpeg')";
-            mainHolder.style.backgroundSize = 'cover'
-            mainHolder.style.height = 100 + 'vh'
-            mainHolder.style.backgroundRepeat = 'no-repeat'
-            footer.style.backgroundColor = "#00445d"; 
+
+            mainHolder.style.height = 'fit-content';
+            mainHolder.scrollTop = 0;
+            _body.scrollTop = 0;
+            window.scrollTo(0, 0);
+            footer.scrollTop = 0;
             return contact.innerHTML;
           default:
-            mainHolder.style.backgroundImage = "url('images/nbg11.jpeg')";
-            mainHolder.style.backgroundSize = 'auto'
-            mainHolder.style.backgroundRepeat = 'repeat'
-            footer.style.backgroundColor = "#f77c1f"; 
-            mainHolder.style.height = 'fit-content'
+
+            mainHolder.style.height = "fit-content";
             return home.innerHTML;
         }
-
       }
 
       // add event listener to all links
       // when clicked, change the content in the main holder
       $("a").click(function (e) {
-        e.preventDefault();
+        
         var href = $(this).attr("href");
         let c = resolveContent(href.replace("#", ""));
         mainHolder.innerHTML = c;
-        window.scrollTo(0, 0);
         // change the url
         window.history.pushState(null, null, href);
+        mainHolder.scrollTop = 0;
+        _body.scrollTop = 0;
+        window.scrollTo(0, 0);
+        footer.scrollTop = 0;
       });
-    
     }
-  
   </script>
-
 </html>

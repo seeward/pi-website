@@ -3,13 +3,19 @@ i {
   color: white;
 }
 
+.address {
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
   white-space: nowrap;
 }
 #main-holder {
   height: 'fit-content';
-  background-image: url("../images/nbg11.jpeg");
+  /* background-image: url("../images/nbg11.jpeg"); */
   background-repeat: 'repeat-y';
   background-size: 'auto';
   margin-top: -30px;
@@ -25,7 +31,7 @@ i {
 }
 body {
   position: relative;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -39,6 +45,12 @@ a:hover {
   font-weight:bold ;
   border: none;
 }
+
+.accent-diff {
+  color: #00a9e6;
+  font-weight: bold;
+  margin-top: -10px;
+}
 header {
   position: sticky;
   top: 0;
@@ -46,15 +58,22 @@ header {
   justify-content: space-between;
   align-items: center;
   /* padding: 1em 2em; */
-  background-color: #00445d;
+  background-color:#00445d;
   z-index: 10;
   padding-right: 25px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10px;
+}
+.toolset-text {
+  color:#f67d1f;
+  font-size: 20px;
+}
+.gradient-text {
+  font-size: 40px;
+  color: #00445d
 }
 
-header img {
-  height: 75px;
-  margin-bottom: 15px;
-}
 
 nav a {
   margin-left: 20px;
@@ -79,27 +98,77 @@ nav a {
   width: 100%;
 }
 
+.slider3 {
+  width: 100%;
+}
+
 .footer {
   padding: 2em;
-  background-color: #f67d1f;
+  background-color:#00445d;
   height: 500px;
   color: white;
 }
 
 .image-container {
-  background-image: url(../images/slider1.jpg);
-  background-size: cover;
   position: relative;
   width: 100%; /* or any desired width */
   height: 400px; /* or any desired height */
+  background: 
+  linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%),
+        url(../images/main-slide-7-up.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
+.image-container3 {
+  position: relative;
+  width: 100%; /* or any desired width */
+  height: 400px; /* or any desired height */
+  background: 
+  linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%),
+        url(../images/main-slide-7-up.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.image-container_2 {
+  position: relative;
+  width: 100%; /* or any desired width */
+  height: 150px; /* or any desired height */
+  background: 
+  linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%),
+        url(../images/main-slide-7-up.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.image-container_right {
+  text-align: right;
+  position: relative;
+  width: 100%; /* or any desired width */
+  height: 300px; /* or any desired height */
+  background: 
+  linear-gradient(to left, rgba(0, 68, 93, 1) 0%, rgba(0, 68, 93, 1) 30%, rgba(0, 68, 93, 0) 100%),
+        url();
+background-position: center;
+background-size: cover;
+}
+
+
+.bg-circle {
+  padding: 40px;
+  background-color: #00445d;
+  border-radius: 50%;
+}
 .slider2 {
-  background-image: url(../images/slider1.jpg);
+  background: 
+  linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%),
+        url(../images/accent-1-up.jpg);
   background-size: cover;
   position: relative;
   width: 100%; /* or any desired width */
   height: 150px; /* or any desired height */
+  padding-left: 20%
 }
 .slider2 h3 {
   font-size: 36px;
@@ -108,27 +177,72 @@ nav a {
   font-size: 40px
 }
 
+.desc-text {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.desc-text2 {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.modern-tag {
+  font-size: 50px;
+  color:#00a9e6;
+  font-weight: bold;
+  margin-top: -10px;
+}
 .overlay-text {
-  position: absolute;
-  top: 50%; /* center vertically */
-  left: 50%; /* center horizontally */
-  transform: translate(-50%, -50%); /* ensures text is truly centered */
   color: white; /* or any desired color */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.75
-  ); /* optional: black background with 50% opacity for better text visibility */
-  padding: 50px;
-  border-radius: 5px; /* optional: for rounded corners */
-  
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 55px;
+  text-align: left;
+}
+
+.overlay-text3 {
+  color: white; /* or any desired color */
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 55px;
+  text-align: left;
+}
+
+.overlay-text_3 {
+  color: white; /* or any desired color */
+  width: 100%;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20%;
+}
+
+.overlay-text_2 {
+  color: white; /* or any desired color */
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 55px;
+  text-align: right;
+  padding-right: 25%;
 }
 .large-text {
   font-size: 100px;
 }
 .small-text {
-  font-size: 28;
+  font-size: 50px;
+  font-weight: bold;
+}
+.small-text2 {
+  font-size: 30px;
+  font-weight: bold;
 }
 .card-body h4 {
   font-size: 20px;
@@ -157,7 +271,6 @@ nav a {
   top: 10px;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10px;
   text-align: center;
   height: 100%;
 }
@@ -167,4 +280,137 @@ nav a {
 }
 .image-overlay h1 {
   color: #f67d1f;
+}
+
+
+.overlapper {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* Adjust the width and height as needed */
+  height: 100%;
+  margin: auto;
+}
+
+
+.overlapper:before {
+  content: ""; /* Necessary for the pseudo-element to be generated */
+  position: absolute; /* Absolute positioning relative to the .circle-behind class */
+  
+  /* Positioning the circle directly behind the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* Making it a circle */
+  width: 350px; /* Adjust as needed */
+  height: 350px; /* Adjust as needed */
+  border-radius: 50%;
+
+  /* Setting the background color of the circle */
+  background-color: #f67d1f;
+
+  /* Setting the z-index ensures the circle is behind the image */
+  z-index: -1;
+}
+
+.overlapper {
+    /* Optional: To make sure the image does not occupy the full width and height of the circular background, you can give the image a margin or padding. */
+    padding: 10px; /* Adjust as needed */
+}
+
+.pi-robot-style {
+  border: 5px solid white;
+  background-color: #00445d;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 50px;
+  box-shadow: 2px 5px 5px black
+}
+.accentbase {
+  position: relative;
+  width: 325px;
+  box-shadow: 2px 5px 5px black;
+margin-bottom: 20px;
+}
+
+.shade {
+  box-shadow: 2px 5px 5px black
+}
+
+
+
+.accenttop {
+  position: absolute;
+  border-radius: 100px;
+  top: -55px;
+  left: -55px;
+  color: black;
+  padding: 40px;
+  z-index: 1; /* Ensure the second image is on top */
+
+}
+
+.accenttop2 {
+  position: absolute;
+  border-radius: 100px;
+  top: -55px;
+  right: -55px;
+  padding: 40px;
+  z-index: 1; /* Ensure the second image is on top */
+}
+
+
+.fullpage {
+  background-image: url(../images/main-slide-7-up.jpg);
+  background-size: cover;
+  width: 100%;
+  background-color: #00445d;
+  text-align: right;
+}
+
+
+
+.featureinner {
+  width: 100%;
+  border-radius: 25px;
+  background-color: #00445d;
+  height: 100%;
+  padding: 20px;
+}
+.card {
+  border: none
+}
+.featureblock {
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  padding: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: black;
+  background-color: white
+}
+.partnerside {
+  text-align: center;
+  width: 100%;
+  color: black;
+  background-color: #102633;
+
+}
+
+.findoutmore {
+  background-image: url(../images/main-slide-7-up.jpg);
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: #00445d 
+}
+.main-how h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-how p {
+  font-size: 20px;
 }
